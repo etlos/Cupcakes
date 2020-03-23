@@ -9,12 +9,14 @@
         <module name="prejektSkabelon" />
         <module name="ProjektSkabelon-master" />
         <module name="Projektskabelon-master" />
+        <module name="Cupcakes" />
         <module name="Projektskabelon" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Cupcakes" options="-endorseddirs C:\Users\Nyxis\Documents\GitHub\Cupcakes\Cupcakes\target/endorsed" />
       <module name="ProjektSkabelon-master" options="-endorseddirs &quot;$PROJECT_DIR$/target/endorsed&quot;" />
       <module name="Projektskabelon" options="-endorseddirs &quot;$PROJECT_DIR$/target/endorsed&quot;" />
       <module name="Projektskabelon-master" options="-endorseddirs C:\Users\Nyxis\Downloads\Projektskabelon-master\Projektskabelon-master\target/endorsed" />
