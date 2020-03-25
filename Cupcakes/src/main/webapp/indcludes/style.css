@@ -1,0 +1,73 @@
+hr{
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+#logUdKnap{
+    color: #a4a4a4 !important;
+    text-align: left !important;
+}
+
+#logUdKnap:hover{
+    color: #a1a1a1 !important;
+    text-align: left !important;
+}
+
+.spacer{
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+
+#loginInf{
+    color: #b5b5b5 !important;
+}
+
+#navbar-top{
+    margin-left: 0;
+}
+
+#main-container{
+    padding-top: 250px;
+}
+
+#menu{
+    margin-top: 160px;
+}
+
+.tagline{
+    margin-top: 1.5em;
+    font-size: 3em;
+}
+
+.page-footer{
+    margin-top: 3em;
+    padding-top: 1em;
+    line-height: 1.5em;
+    background-color: #a4a4a4;
+    color: white;
+    padding-bottom: 1em;
+}
+
+.brugerLogin{
+    color: #b4b4b4;
+    margin-top: 20px;
+    display: inline;
+}
+
+.display-4{
+    display: inline;
+}
+
+#antal{
+    text-align: center;
+    margin: 0 auto;
+    width: 5em;
+}
+
+.danger{
+    color: rgb(236, 66, 66);
+}
+
+.table-striped-2nth tbody tr:nth-child(4n+1), .table-striped-2nth tbody tr:nth-child(4n+2) {
+    background: #f2f2f2;
+}

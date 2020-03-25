@@ -11,9 +11,9 @@ import java.sql.SQLException;
  */
 public class Connector {
 
-    private static String URL;
-    private static String USERNAME;
-    private static String PASSWORD;
+    private static String URL ="jdbc:mysql://localhost:3306/cupcakes?serverTimezone=CET&useSSL=false";
+    private static String USERNAME ="root";
+    private static String PASSWORD = "Mac+AdamA7X";
 
     private static Connection singleton;
 
@@ -29,18 +29,18 @@ public class Connector {
         return singleton;
     }
 
-    public static void setDBCredentials() {
+   /* public static void setDBCredentials() {
         String deployed = System.getenv("DEPLOYED");
-        //Prod: hent variabler fra setenv.sh
+        //Droplet Prod: hent variabler fra setenv.sh
         if (deployed != null) {
             URL = System.getenv("JDBC_CONNECTION_STRING");
             USERNAME = System.getenv("JDBC_USER");
             PASSWORD = System.getenv("Rock-solid1");
         } else {
             //Localhost
-            URL = "jdbc:mysql://localhost:3306/cupcakes";
+            URL = "jdbc:mysql://localhost:3306/cupcakes?serverTimezone=CET&useSSL=false";
             USERNAME = "root";
             PASSWORD = "Mac+AdamA7X";
         }
-    }
+    }*/
 }
