@@ -30,7 +30,7 @@ public class Login extends Command {
         if(user.getRole().equalsIgnoreCase("employee")){
             sessionUser = "admin/adminfp";
         }else if(user.getRole().equalsIgnoreCase("customer")){
-            sessionUser = "customers/cusomterpage";
+            sessionUser = "customers/customerpage";
         }
         return sessionUser;
     }
