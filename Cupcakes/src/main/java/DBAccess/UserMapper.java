@@ -55,5 +55,21 @@ public class UserMapper {
             throw new LoginSampleException(ex.getMessage());
         }
     }
+    public void addCredit(int id, int amount){
+        try {
+            Connection conn = Connector.connection();
+            String SQL = "UPDATE users " +
+                    "SET credit = credit + ? " +
+                    "WHERE userId = ?";
+            PreparedStatement ps = conn.prepareStatement(SQL);
+            ps.setInt(1, amount);
+            ps.setInt(2, id);
+            ps.executeUpdate();
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+    }
+
+
 
 }
