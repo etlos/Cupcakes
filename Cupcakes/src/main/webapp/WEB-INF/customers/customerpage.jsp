@@ -11,7 +11,7 @@
         <form name="cupcakeShop" action="/FrontController" method="post">
             <div>
                 <div>
-                    <p>Vælg en bund til din cupcake</p><br>
+                    <p>Vælg en bund til din cupcake</p>
                     <select class="custom-select" name="bottom" id="bottom">
                         <c:forEach var="element" items="${requestScope.bottom}">
                             <option value="${element.id}">${element.name}</option>
@@ -21,8 +21,8 @@
                         <option value="4">Pistacie, 6.00,-</option>
                         <option value="5">Mandel, 7.00,-</option>              --%>
                         </c:forEach>
-                    </select>
-                </div><br>
+                    </select><br><br>
+                </div>
                 <div>
                     <p>Vælg en topping til din cupcake</p><br>
                     <select class="custom-select" name="topping" id="topping">
@@ -38,8 +38,8 @@
                         <option value="8">Citron, 8.00,-</option>
                         <option value="9">Blue cheese, 9.00,-</option>             --%>
                         </c:forEach>
-                    </select>
-                </div><br>
+                    </select><br><br>
+                </div>
                 <div>
                     <p>Angiv et antal af den valgte cupcake</p><br>
                     <input type="text" id="count" name="count" placeholder="Antal, fx. 2"><br>
