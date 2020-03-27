@@ -26,6 +26,9 @@ public class Login extends Command {
         session.setAttribute( "role", user.getRole() );
         session.setAttribute("email", email);  // ellers skal man skrive  user.email på jsp siderne og det er sgu lidt mærkeligt at man har adgang til private felter. Men måske er det meget fedt , jeg ved det ikke
 
+        request.setAttribute("bottomList", LogicFacade.getBottoms() );
+        request.setAttribute("toppingList", LogicFacade.getToppings() );
+
         String sessionUser = "";
         if(user.getRole().equalsIgnoreCase("employee")){
             sessionUser = "admin/adminfp";

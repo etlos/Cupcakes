@@ -1,6 +1,8 @@
 package FunctionLayer;
 
+import DBAccess.CupcakeMapper;
 import DBAccess.UserMapper;
+import java.util.ArrayList;
 
 /**
  * The purpose of LogicFacade is to...
@@ -16,6 +18,14 @@ public class LogicFacade {
         User user = new User(email, password, "customer");
         UserMapper.createUser( user );
         return user;
+    }
+
+    public static ArrayList<Bottom> getBottoms() throws LoginSampleException {
+        return CupcakeMapper.getBottoms();
+    }
+
+    public static ArrayList<Topping> getToppings() throws LoginSampleException {
+        return CupcakeMapper.getToppings();
     }
 
 }

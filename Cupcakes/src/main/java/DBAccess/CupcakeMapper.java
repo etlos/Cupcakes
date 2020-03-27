@@ -13,7 +13,7 @@ import java.util.ArrayList;
 
 public class CupcakeMapper {
 
-    public static ArrayList<Bottom> getBottoms() throws SQLException, LoginSampleException {
+    public static ArrayList<Bottom> getBottoms() throws LoginSampleException {
 
         ArrayList<Bottom> bottoms = new ArrayList<>();
         // BOTTOM
@@ -40,7 +40,7 @@ public class CupcakeMapper {
         return bottoms;
     }
 
-    public static ArrayList<Topping> getToppings() throws SQLException, LoginSampleException {
+    public static ArrayList<Topping> getToppings() throws  LoginSampleException {
 
         ArrayList<Topping> toppings = new ArrayList<>();
         // TOPPING
