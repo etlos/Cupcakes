@@ -11,7 +11,7 @@
     <meta name="generator" content="Jekyll v3.8.6">
 
     <title>Olsker Cupcakes</title>
-    <link rel="canonical" href="indcludes/cover.css">
+    <link rel="canonical" href="includes/cover.css">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">

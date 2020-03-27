@@ -59,7 +59,7 @@
                 <a class="nav-link" href="#">Login</a>
                 <a class="nav-link" href="#">Opret Bruger</a>
             </nav>
-            <h1>Hello ${sessionScope.email} </h1>
+            <h1>Du er logget ind som: ${sessionScope.email} </h1>
 
         </div>
     </header>

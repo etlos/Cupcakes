@@ -3,6 +3,8 @@ package DBAccess;
 import FunctionLayer.Bottom;
 import FunctionLayer.LoginSampleException;
 import FunctionLayer.Topping;
+import com.sun.scenario.effect.impl.sw.java.JSWBlend_SRC_OUTPeer;
+import org.w3c.dom.ls.LSOutput;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -40,10 +42,12 @@ public class CupcakeMapper {
         return bottoms;
     }
 
+
     public static ArrayList<Topping> getToppings() throws SQLException, LoginSampleException {
 
         ArrayList<Topping> toppings = new ArrayList<>();
         // TOPPING
+
         try {
             Connection con = Connector.connection();
             // Prepare SQL.
@@ -66,4 +70,5 @@ public class CupcakeMapper {
         }
         return toppings;
     }
+
 }

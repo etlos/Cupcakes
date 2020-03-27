@@ -19,6 +19,11 @@
         </form>
     </td>
         <td>
+            <form name="orders" action="FrontController" method="POST">
+                <input type="hidden" name="target" value="redirect">
+                <input type="hidden" name="redirect" value="orders">
+                <input type="submit" value="Se ordre">
+            </form>
             <h1>Se ordre</h1>
         </td>
     </tr>
