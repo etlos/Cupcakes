@@ -8,8 +8,10 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@include file="/indcludes/customerheader.php"%>
 
-<form name="cupcakeShop" action="/FrontController" method="post">
-    <div>
+<table>
+
+    <form name="shop" action="FrontController" method="POST">
+        <input type="hidden" name="target" value="shop">
         <div>
             <p>Vælg en bund til din cupcake</p>
             <select class="custom-select" name="bottom" id="bottom">
@@ -26,13 +28,20 @@
                 </c:forEach>
             </select><br><br>
         </div>
+        <br>
         <div>
             <p>Angiv et antal af den valgte cupcake</p><br>
             <input type="text" id="count" name="count" placeholder="Antal, fx. 2"><br>
-            <input class="button" type="submit" value="submit">
+            <input type="submit" value="Føj til kurv">
         </div><br>
-    </div>
-</form>
-        </form>
+    </form>
+
+</table>
+<c:if test = "${requestScope.error!= null}" >
+
+    <h2>Error ! </h2>
+    ${requestScope.error}
+
+</c:if>
 
 <%@include file="/indcludes/footer.inc"%>

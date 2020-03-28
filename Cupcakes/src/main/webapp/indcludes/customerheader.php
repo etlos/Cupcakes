@@ -46,7 +46,7 @@
     </style>
 
     <!-- Custom styles for this template -->
-    <link href="cover.css" rel="stylesheet"
+    <link href="cover.css" rel="stylesheet">
 </head>
 
 <body class="text-center">
@@ -59,7 +59,13 @@
                 <a class="nav-link" href="#">Login</a>
                 <a class="nav-link" href="#">Opret Bruger</a>
             </nav>
-           <h1>Du er logget ind som: ${sessionScope.email} </h1>
+           <h1>Hej ${sessionScope.email} </h1>
         </div>
+        <form name="tobasket" action="FrontController" method="POST">
+            <input type="hidden" name="target" value="redirect">
+            <input type="hidden" name="redirect" value="basket">
+            <input type="submit" value="Kurv">
+            <span class="badge badge-pill badge-danger">${fn:length(sessionScope.basket)}</span>
+        </form>
     </header>
 

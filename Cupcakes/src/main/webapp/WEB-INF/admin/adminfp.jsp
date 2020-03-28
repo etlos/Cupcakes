@@ -2,14 +2,6 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@include file="/indcludes/adminheader.inc"%>
 
-<div class="row">
-    <div class="col-lg-12 text-center">
-        <h1 class="display-1">Hej ${sessionScope.email} </h1>
-    </div>
-</div>
-<div class="row">
-
-</div>
 <table>
     <tr><td>
         <form name="addusercredit" action="FrontController" method="POST">

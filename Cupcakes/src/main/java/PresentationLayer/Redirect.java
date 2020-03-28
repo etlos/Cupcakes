@@ -10,10 +10,11 @@ public class Redirect extends Command {
     String execute(HttpServletRequest request, HttpServletResponse response) throws LoginSampleException {
 
         String gotopage = request.getParameter("redirect");
-
         switch (gotopage){
             case "addcredit":
                 return "admin/addcredit";
+            case "basket":
+                return "customers/basket";
         }
 
         return "Ups";

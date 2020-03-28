@@ -15,7 +15,7 @@ import java.util.ArrayList;
 
 public class CupcakeMapper {
 
-    public static ArrayList<Bottom> getBottoms() throws SQLException, LoginSampleException {
+    public static ArrayList<Bottom> getBottoms() throws LoginSampleException {
 
         ArrayList<Bottom> bottoms = new ArrayList<>();
         // BOTTOM
