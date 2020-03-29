@@ -20,31 +20,28 @@
     </tr>
     </thead>
     <tbody>
-    <c:set var="sumTotal" value="${0}" />
+    <c:set var="totalPrice" value="${0}" />
     <c:forEach var="e" items="${sessionScope.basket}">
-        <c:set var="sumTotal" value="${sumTotal + e.totalPrice}" />
+        <c:set var="totalPrice" value="${totalPrice + e.sum}" />
         <tr>
-            <td>${e.bottom}</td>
-            <td>${e.topping}</td>
+            <td>${e.bottomName}</td>
+            <td>${e.toppingName}</td>
             <td>${e.amount}</td>
-            <td>${e.totalPrice} kr</td>
-
-            <td>
-                <form action="FrontController" method="post" style="margin-bottom: 0px;">
-                    <input type="hidden" name="target" value="deleteOrderline">
-                    <input type="hidden" name="uniqueId" value="${e.lineId}">
-                    <button type="submit" class="btn btn-link" >Fjern</button>
-                </form>
-            </td>
+            <td>${e.sum} kr</td>
         </tr>
     </c:forEach>
     <tr>
         <td colspan="3">&nbsp;</td>
-        <td>${sumTotal} kr</td>
+        <td>${totalPrice} kr</td>
         <td>&nbsp;</td>
     </tr>
     </tbody>
 </table>
+<form name="tobasket" action="FrontController" method="POST">
+    <input type="hidden" name="target" value="placeorder">
+    <input type="submit" value="Bestil Cupcakes!">
+</form>
+<tr>
 ${requestScope.besked}
 <c:if test="${empty sessionScope.basket}">
     <div class="row">
@@ -53,7 +50,7 @@ ${requestScope.besked}
         </div>
     </div>
 </c:if>
-
+</tr>
 <%@include file="/indcludes/footer.inc"%>
 
 

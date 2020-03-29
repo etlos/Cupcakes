@@ -35,5 +35,14 @@ public class Bottom {
     public void setPrice(int price) {
         this.price = price;
     }
+
+    @Override
+    public String toString() {
+        return "Bottom{" +
+                "bottomId=" + bottomId +
+                ", name='" + name + '\'' +
+                ", price=" + price +
+                '}';
+    }
 }
 

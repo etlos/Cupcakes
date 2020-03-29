@@ -24,14 +24,15 @@
             <p>Vælg en topping til din cupcake</p><br>
             <select class="custom-select" name="topping" id="topping">
                 <c:forEach var="element" items="${requestScope.toppingList}">
-                    <option value="${element.toppingId}">${element.name}</option>
+                    <option value="${element.toppingId}" >${element.name}</option>
                 </c:forEach>
             </select><br><br>
         </div>
         <br>
         <div>
             <p>Angiv et antal af den valgte cupcake</p><br>
-            <input type="text" id="count" name="count" placeholder="Antal, fx. 2"><br>
+            <input type="text" id="count" name="count" value="" placeholder="Antal, fx. 2">
+            <br>
             <input type="submit" value="Føj til kurv">
         </div><br>
     </form>

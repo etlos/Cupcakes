@@ -8,9 +8,9 @@ public class BasketLine {
     private String bottomName;
     private String toppingName;
     private int amount;
-    private double sum;
+    private int sum;
 
-    public BasketLine(String lineId, int bottomId, int toppingId, String bottomName, String toppingName, int amount, double sum) {
+    public BasketLine(String lineId, int bottomId, int toppingId, String bottomName, String toppingName, int amount, int sum) {
         this.lineId = lineId;
         this.bottomId = bottomId;
         this.toppingId = toppingId;
@@ -73,7 +73,20 @@ public class BasketLine {
         return sum;
     }
 
-    public void setSum(double sum) {
+    public void setSum(int sum) {
         this.sum = sum;
+    }
+
+    @Override
+    public String toString() {
+        return "BasketLine{" +
+                "lineId='" + lineId + '\'' +
+                ", bottomId=" + bottomId +
+                ", toppingId=" + toppingId +
+                ", bottomName='" + bottomName + '\'' +
+                ", toppingName='" + toppingName + '\'' +
+                ", amount=" + amount +
+                ", sum=" + sum +
+                '}';
     }
 }

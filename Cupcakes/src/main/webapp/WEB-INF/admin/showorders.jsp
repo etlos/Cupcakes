@@ -18,10 +18,10 @@
             <th>Antal</th>
             <th>Total pris</th>
         </tr>
-        <c:forEach var="ordre" items="${requestScope.ordreListe}">
+        <c:forEach var="ordre" items="${requestScope.orderlist}">
             <tr>
 
-                <td>${Order.orderId}</td>
+                <td>${ordre.orderLineId}</td>
                 <td>${Order.orderTime}</td>
                 <td>${Order.userId}</td>
                 <td>${Order.toppingId}</td>

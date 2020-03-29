@@ -28,6 +28,7 @@ public class Login extends Command {
 
         request.setAttribute("bottomList", LogicFacade.getBottoms() );
         request.setAttribute("toppingList", LogicFacade.getToppings() );
+        request.setAttribute("orderlist", LogicFacade.getAllOrders() );
 
         String sessionUser = "";
         if(user.getRole().equalsIgnoreCase("employee")){
